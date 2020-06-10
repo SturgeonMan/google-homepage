@@ -7,13 +7,62 @@
     width: 50%;
     border-radius: 20202020202px;
     height: 40px;
+    outline: none
+    
     }
     .search-bar-position {
         padding-left: 390px;
     }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li {
+        float: right;
+    }
+    a {
+        display: block;
+        padding: 12px;
+        color: black;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .google-box {
+        background-color:dimgrey;
+        padding-top: 30px;
+    }
+    .customize-box {
+        color: dodgerblue;
+        padding-top: 100%;
+    }
+    .short-cut-1 {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: forestgreen;
+        outline: none;
+        position: center; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .flex-shortcut {
+        display: -webkit-box;
+        box-orient: horizontal;
+    }
+    
 </style>
 <!DOCTYPE html>
 <html lang="en">
+<header>
+    <ul>
+        <li> <a class="google-box" href="gmail.com"><svg viewBox="0 0 24 24"></svg></a></li>
+        <li> <a href="https://www.google.com/imghp?hl=en&amp;tab=ri&amp;ogbl">Images</a></li>
+        <li> <a href=https://mail.google.com/mail/?tab=rm&amp;ogbl">Gmail</a></li>
+    </ul>
+</header>
 <body>
     <div>
     <h1 class="google-logo"> <a><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="An image of the google logo"></a></h1></div>
@@ -21,5 +70,16 @@
     <form class="search-bar-position" action=/"search-google"> 
     <input class="search-bar" type="text" placeholder="Search Google or type a URL">
     </form>
+</div>
+<div class:"flex-shortcut">
+         <button type="button" class="short-cut-1"></button> </li>
+         <button type="button" class="short-cut-1"></button> </li>
+         <button type="button" class="short-cut-1"></button> </li>
+         <button type="button" class="short-cut-1"></button> </li>
     </div>
 </body>
+<footer>
+     <ul>
+         <li> <a class="customize-box" href="">Customize</a></li>
+     </ul>
+</footer>
