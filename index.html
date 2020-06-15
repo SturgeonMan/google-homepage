@@ -4,14 +4,17 @@
     padding-left: 470px;
     }
     .search-bar {
+    box-shadow: 1px 1px 5px -2px gray;
+    outline-style: none;
     width: 50%;
+    border-color: rgba(233, 231, 231, 0.1);
     border-radius: 20202020202px;
     height: 40px;
-    outline: none
-    
+    background: rgba(233, 231, 231, 0.1);
     }
     .search-bar-position {
-        padding-left: 390px;
+        padding-left: 400px;
+        border: rgba(red, green, blue, .01);
     }
 
     ul {
@@ -35,22 +38,30 @@
         padding-top: 30px;
     }
     .customize-box {
+        outline-style: none;
         color: dodgerblue;
-        padding-top: 100%;
+        box-shadow: 1px 1px 5px -2px gray;
+        border-radius: 20202020px;
+        position: absolute;
+        top: 90%;
+        right: 2%;
     }
     .short-cut-1 {
         height: 50px;
         width: 50px;
+        border-color: rgba(233, 231, 231, 0.1);
         border-radius: 100%;
-        background-color: forestgreen;
+        background-color:darkgrey;
         outline: none;
-        position: center; 
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 25px;
+        margin-top: 10px;
+        opacity: .15;
     }
     .flex-shortcut {
-        display: -webkit-box;
-        box-orient: horizontal;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
     }
     
 </style>
@@ -71,11 +82,11 @@
     <input class="search-bar" type="text" placeholder="Search Google or type a URL">
     </form>
 </div>
-<div class:"flex-shortcut">
-         <button type="button" class="short-cut-1"></button> </li>
-         <button type="button" class="short-cut-1"></button> </li>
-         <button type="button" class="short-cut-1"></button> </li>
-         <button type="button" class="short-cut-1"></button> </li>
+<div class="flex-shortcut">
+         <button type="button" class="short-cut-1"></button> 
+         <button type="button" class="short-cut-1"></button> 
+         <button type="button" class="short-cut-1"></button> 
+         <button type="button" class="short-cut-1"></button> 
     </div>
 </body>
 <footer>
